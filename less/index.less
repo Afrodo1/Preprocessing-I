@@ -65,9 +65,24 @@ table {
 	
 }
 .container{
-	max-width: 80%;
+	max-width: 1000px;
 	margin: 10%;
+	@media (max-width: 500px){
+		width: 80%;
+		margin: 5%;
+		
+	}
 	nav{
+		@media(max-width: 500px){
+			display: flex;
+			flex-direction: column;
+			width:100%;
+			margin: 0 auto;
+			border-right: 1px solid @darkprofgray;
+			border-left: 1px solid @darkprofgray;
+			border-bottom: 1px solid @darkprofgray;
+			
+		}
 		width: 50%;
 		margin-bottom: 3%;
 		display: flex;
@@ -75,6 +90,11 @@ table {
 		margin-left: 50%;		
 	}
 	a{
+		@media (max-width: 500px){
+			border-top: 1px solid @darkprofgray;
+			width: 100%;
+			text-align: center;
+		}
 		text-decoration: none;
 		color: black;
 	}	
@@ -85,6 +105,9 @@ table {
 	flex-direction: column;
 	width: 100%;
 	background-color: @profgray;
+	@media(max-width: 500px){
+		width: 100%;		
+	}
 	.line{
 		margin-top: 2%;
 		margin-left: 2%;
@@ -93,30 +116,42 @@ table {
 		border: .5px solid black;
 	}
 	.top{
-		max-width: 80%;
+		width: 100%;
 		display:flex;
 		flex-direction: column;
 		width: 100%;
 		margin-left: 2%;
+		@media(max-width: 500px){
+			width: 100%;
+		}
 		h1{
 			font-size: 30pt;
-			
+			@media(max-width: 500px){
+				font-size: 16pt;
+			}
 			
 		}
-		h4{
-			
+		h4{			
 			margin-top: 2%;			
 			font-size: 12pt;
+			@media(max-width: 500px){
+				font-size: 10pt;
+			}
 		}
 		.me{
 			margin-top: 5%;
-			
 			width: 20%;
+			@media(max-width:500px){
+				width: 50%;
+				margin-left: 25%;
+			}
 		}
 	}
 	.bot{
 		margin-left: 2%;
 		p{
+			display: flex;
+			flex-wrap: nowrap;
 			width: 15%;
 			border-radius: 5px;
 			margin-top: 1%;
@@ -125,7 +160,13 @@ table {
 			padding-left: 2%;
 			padding-top: 1%;
 			padding-bottom: 1%;
+			text-align: center;
 			background-color: @darkprofgray;
+			@media(max-width: 500px){
+				width: 25%;
+				font-size: 8pt;
+				text-align: center;
+			}
 		}
 
 	}
@@ -135,13 +176,22 @@ table {
 	display: flex;
 	margin-top: 5%;
 	.bio{
-		width: 45%;
-		margin-right: 5%
+		width: 60%;
+		margin-right: 0%;
+		h2{
+			font-weight:bold;
+			font-size: 14;
+			margin-bottom: 4%;
+		}
+		p{
+			font-size: 8pt;
+			width: 85%;
+		}
 	}
 	.qualities{
 		display:flex;
 		flex-direction: column;
-		width: 50%;
+		width: 40%;
 		h4{
 			margin-bottom: 3%;
 		}
@@ -194,9 +244,9 @@ footer{
 	display: flex;
 	flex-direction: column;
 	background-color: @darkprofgray;
-	padding-bottom: 7%;
+	padding-bottom: 4%;
 	align-items: center;
-	padding-top: 5%;
+	padding-top: 2%;
 	color:white;
 	margin-top: 5%;
 }
