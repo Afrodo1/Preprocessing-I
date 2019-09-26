@@ -140,13 +140,14 @@ table {
   padding-left: 5%;
 }
 .container {
-  max-width: 1000px;
-  margin: 10%;
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   .container {
     width: 80%;
-    margin: 5%;
+    margin: 0 auto;
   }
 }
 .container nav {
@@ -176,6 +177,16 @@ table {
     border-top: 1px solid #8D9294;
     width: 100%;
     text-align: center;
+  }
+}
+.container a:hover {
+  background-color: #8D9294;
+  color: white;
+}
+@media (max-width: 500px) {
+  .container a:hover {
+    color: #8D9294;
+    background-color: white;
   }
 }
 .title {
@@ -208,7 +219,8 @@ table {
   }
 }
 .title .top h1 {
-  font-size: 30pt;
+  width: 95%;
+  font-size: 200%;
 }
 @media (max-width: 500px) {
   .title .top h1 {
@@ -239,17 +251,23 @@ table {
 }
 .title .bot p {
   display: flex;
-  flex-wrap: nowrap;
-  width: 15%;
+  flex-direction: column;
+  font-size: 90%;
+  width: 22%;
   border-radius: 5px;
   margin-top: 1%;
   margin-bottom: 10%;
   color: white;
-  padding-left: 2%;
   padding-top: 1%;
   padding-bottom: 1%;
   text-align: center;
   background-color: #8D9294;
+}
+.title .bot p a {
+  color: white;
+}
+.title .bot p a:hover {
+  color: black;
 }
 @media (max-width: 500px) {
   .title .bot p {
@@ -263,9 +281,21 @@ table {
   display: flex;
   margin-top: 5%;
 }
+@media (max-width: 500px) {
+  .mid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .mid .bio {
   width: 60%;
-  margin-right: 0%;
+}
+@media (max-width: 500px) {
+  .mid .bio {
+    width: 100%;
+    margin-bottom: 5%;
+  }
 }
 .mid .bio h2 {
   font-weight: bold;
@@ -273,16 +303,35 @@ table {
   margin-bottom: 4%;
 }
 .mid .bio p {
-  font-size: 8pt;
+  font-size: 10pt;
   width: 85%;
+}
+@media (max-width: 500px) {
+  .mid .bio p {
+    font-size: 12pt;
+  }
 }
 .mid .qualities {
   display: flex;
   flex-direction: column;
   width: 40%;
 }
+@media (max-width: 500px) {
+  .mid .qualities {
+    width: 100%;
+    border-top: 1px solid #8D9294;
+    padding-top: 2%;
+    border-bottom: 1px solid #8D9294;
+    padding-bottom: 5%;
+  }
+}
 .mid .qualities h4 {
   margin-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .mid .qualities h4 {
+    margin-bottom: 5%;
+  }
 }
 .mid .qualities ul {
   display: flex;
