@@ -1,1 +1,391 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+.TimesNewRoman {
+  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+}
+.Georgia {
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+.graphbox {
+  border-top: 1px solid #DFDFDF;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+}
+.container {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.container nav {
+  width: 50%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50%;
+}
+@media (max-width: 500px) {
+  .container nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    border-right: 1px solid #8D9294;
+    border-left: 1px solid #8D9294;
+    border-bottom: 1px solid #8D9294;
+  }
+}
+.container a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 500px) {
+  .container a {
+    border-top: 1px solid #8D9294;
+    width: 100%;
+    text-align: center;
+  }
+}
+.container a:hover {
+  background-color: #8D9294;
+  color: white;
+}
+@media (max-width: 500px) {
+  .container a:hover {
+    color: #8D9294;
+    background-color: white;
+  }
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #DFDFDF;
+}
+@media (max-width: 500px) {
+  .title {
+    width: 100%;
+  }
+}
+.title .line {
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  border: 0.5px solid black;
+}
+.title .top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 2%;
+}
+@media (max-width: 500px) {
+  .title .top {
+    width: 100%;
+  }
+}
+.title .top h1 {
+  width: 95%;
+  font-size: 200%;
+}
+@media (max-width: 500px) {
+  .title .top h1 {
+    font-size: 16pt;
+  }
+}
+.title .top h4 {
+  margin-top: 2%;
+  font-size: 12pt;
+}
+@media (max-width: 500px) {
+  .title .top h4 {
+    font-size: 10pt;
+  }
+}
+.title .top .me {
+  margin-top: 5%;
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .title .top .me {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+.title .bot {
+  margin-left: 2%;
+}
+.title .bot p {
+  display: flex;
+  flex-direction: column;
+  font-size: 90%;
+  width: 22%;
+  border-radius: 5px;
+  margin-top: 1%;
+  margin-bottom: 10%;
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  background-color: #8D9294;
+}
+.title .bot p a {
+  color: white;
+}
+.title .bot p a:hover {
+  color: black;
+}
+@media (max-width: 500px) {
+  .title .bot p {
+    width: 25%;
+    font-size: 8pt;
+    text-align: center;
+  }
+}
+.mid {
+  width: 100%;
+  display: flex;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  .mid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.mid .bio {
+  width: 60%;
+}
+@media (max-width: 500px) {
+  .mid .bio {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+.mid .bio h2 {
+  font-weight: bold;
+  font-size: 14;
+  margin-bottom: 4%;
+}
+.mid .bio p {
+  font-size: 10pt;
+  width: 85%;
+}
+@media (max-width: 500px) {
+  .mid .bio p {
+    font-size: 12pt;
+  }
+}
+.mid .qualities {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .mid .qualities {
+    width: 100%;
+    border-top: 1px solid #8D9294;
+    padding-top: 2%;
+    border-bottom: 1px solid #8D9294;
+    padding-bottom: 5%;
+  }
+}
+.mid .qualities h4 {
+  margin-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .mid .qualities h4 {
+    margin-bottom: 5%;
+  }
+}
+.mid .qualities ul {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  border-bottom: 1px solid #DFDFDF;
+  border-left: 1px solid #DFDFDF;
+  border-right: 1px solid #DFDFDF;
+}
+.mid .qualities ul li {
+  border-top: 1px solid #DFDFDF;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+}
+.bottom {
+  width: 100%;
+  margin-top: 5%;
+}
+.bottom h5 {
+  margin-bottom: 1%;
+  font-weight: bold;
+  font-size: 15pt;
+}
+.bottom ul {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.bottom .row1 {
+  background-color: #DFDFDF;
+}
+.bottom .row3 {
+  background-color: #DFDFDF;
+}
+.bottom .titleRow {
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #8D9294;
+  padding-bottom: 4%;
+  align-items: center;
+  padding-top: 2%;
+  color: white;
+  margin-top: 5%;
+}
+html,
+body {
+  height: 100%;
+  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+}

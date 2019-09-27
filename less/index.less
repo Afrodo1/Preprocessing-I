@@ -49,11 +49,250 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+@profgray: #DFDFDF;
+@darkprofgray: #8D9294;
+.TimesNewRoman{
+	font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+}
+.Georgia{
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+.graphbox{
+	border-top: 1px solid @profgray;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 5%;
+	
+}
+.container{
+	max-width: 800px;
+	width: 80%;
+	margin: 0 auto;
+	@media (max-width: 500px){
+		width: 80%;
+		margin: 0 auto;
+		
+	}
+	nav{
+		@media(max-width: 500px){
+			display: flex;
+			flex-direction: column;
+			width:100%;
+			margin: 0 auto;
+			border-right: 1px solid @darkprofgray;
+			border-left: 1px solid @darkprofgray;
+			border-bottom: 1px solid @darkprofgray;
+			
+		}
+		width: 50%;
+		margin-bottom: 3%;
+		display: flex;
+		justify-content: space-between;
+		margin-left: 50%;		
+	}
+	a{
+		@media (max-width: 500px){
+			border-top: 1px solid @darkprofgray;
+			width: 100%;
+			text-align: center;
+		}
+		text-decoration: none;
+		color: black;
+	}
+	a:hover{
+		background-color: @darkprofgray;
+		color: white;
+		@media(max-width: 500px){
+			color: @darkprofgray;
+			background-color: white;
+		}
+	}	
 }
 
+.title{
+	display:flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: @profgray;
+	@media(max-width: 500px){
+		width: 100%;		
+	}
+	.line{
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-bottom: 2%;
+		margin-right: 2%;
+		border: .5px solid black;
+	}
+	.top{
+		width: 100%;
+		display:flex;
+		flex-direction: column;
+		width: 100%;
+		margin-left: 2%;
+		@media(max-width: 500px){
+			width: 100%;
+		}
+		h1{
+			width: 95%;
+			font-size: 200%;
+			@media(max-width: 500px){
+				font-size: 16pt;
+			}
+			
+		}
+		h4{			
+			margin-top: 2%;			
+			font-size: 12pt;
+			@media(max-width: 500px){
+				font-size: 10pt;
+			}
+		}
+		.me{
+			margin-top: 5%;
+			width: 20%;
+			@media(max-width:500px){
+				width: 50%;
+				margin-left: 25%;
+			}
+		}
+	}
+	.bot{
+		margin-left: 2%;
+		p{
+			display: flex;
+			flex-direction: column;
+			font-size: 90%;			
+			width: 22%;
+			border-radius: 5px;
+			margin-top: 1%;
+			margin-bottom: 10%;
+			color: white;
+			padding-top: 1%;
+			padding-bottom: 1%;
+			text-align: center;
+			background-color: @darkprofgray;
+			a{
+				color: white;
+			}
+			a:hover{
+				color: black;
+			}
+			@media(max-width: 500px){
+				width: 25%;
+				font-size: 8pt;
+				text-align: center;
+			}
+		}
+
+	}
+}
+.mid{
+	width:100%;
+	display: flex;
+	margin-top: 5%;
+	@media(max-width:500px){
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.bio{
+		width: 60%;
+		
+		@media(max-width:500px){
+			width: 100%;
+			margin-bottom: 5%;
+		}
+		h2{
+			
+			font-weight:bold;
+			font-size: 14;
+			margin-bottom: 4%;
+		}
+		p{
+			font-size: 10pt;
+			width: 85%;
+			@media(max-width: 500px){
+				font-size: 12pt;
+			}
+		}
+	}
+	.qualities{
+		display:flex;
+		flex-direction: column;
+		width: 40%;
+		@media(max-width: 500px){
+			width: 100%;
+			border-top: 1px solid @darkprofgray;
+			padding-top: 2%;
+			border-bottom: 1px solid @darkprofgray;
+			padding-bottom: 5%;
+		}
+		h4{
+			margin-bottom: 3%;
+			@media(max-width: 500px){
+				margin-bottom: 5%;
+			}
+		}
+		ul{
+			display:flex;
+			flex-direction: column;
+			align-content: space-between;
+			border-bottom: 1px solid @profgray;
+			border-left: 1px solid @profgray;
+			border-right: 1px solid @profgray;
+			
+			li{
+				.graphbox();
+				
+			}
+		}
+	}
+
+}
+.bottom{
+	width: 100%;	
+	margin-top: 5%;
+	h5{
+		margin-bottom: 1%;
+		font-weight: bold;
+		font-size: 15pt;
+	}
+	ul{
+		display: flex;
+		justify-content: space-between;
+		padding-right: 10%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+	.row1{
+		background-color: @profgray;
+		
+	}
+	.row3{
+		background-color: @profgray;
+	}
+	.titleRow{
+		border-top: 1px solid @profgray;
+		border-bottom: 1px solid @profgray;
+		font-weight: bold;
+	}
+
+}
+footer{
+	display: flex;
+	flex-direction: column;
+	background-color: @darkprofgray;
+	padding-bottom: 4%;
+	align-items: center;
+	padding-top: 2%;
+	color:white;
+	margin-top: 5%;
+}
+
+
 html, body {
-    height: 100%;
+	height: 100%;
+	.TimesNewRoman();
 }
 
